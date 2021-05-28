@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* handle scrollbar */
+
+@font-face {
+  font-family: my_style;
+  src: url("./font-style/Montserrat-Light.ttf");
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+section {
+  padding: 100px;
+}
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url("./images/banner.jpg");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner h2 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1.5em;
+  font-family: my_style;
+}
+
+.banner h2 span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.banner h3 {
+  font-size: 1.3em;
+  color: #fff;
+  padding: 0.1em 0px;
+}
+
+.btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+/* javascript start sticky header */
+header.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+/* javascript End sticky header */
+header.sticky .logo {
+  color: #111;
+}
+
+header.sticky ul li a {
+  color: #111;
+}
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: my_style;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0px 15px;
+  color: #fff;
+  font-style: italic;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/*  */
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.heading h2 {
+  font-family: my_style;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.contentBx h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contentBx {
+  padding-right: 30px;
+}
+
+.contentBx p {
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.w50 {
+  min-width: 50%;
+}
+
+/* services */
+.services {
+  background: #111;
+}
+
+.heading.white {
+  color: #fff;
+}
+
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.services .content .servicesBx {
+  padding: 20px 40px;
+  color: #fff;
+  background: #222;
+  max-width: 320px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx:hover {
+  background: #2196f3;
+  cursor: pointer;
+}
+
+.services .content .servicesBx img {
+  max-width: 80px;
+  filter: invert(1);
+}
+
+.services .content .servicesBx h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*  */
+
+.work .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work .content .workBx {
+  width: 50%;
+  padding: 20px;
+}
+
+.work .content .workBx img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* testimonals */
+.testimonials {
+  background: #f7f7f7;
+}
+
+.testimonials .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonials .content .testimonialsBx {
+  max-width: calc(50% - 40px);
+  background: #2196f3;
+  padding: 60px 40px;
+  margin: 20px;
+}
+
+.testimonials .content .testimonialsBx p {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimonials .content .testimonialsBx h3 {
+  margin-top: 40px;
+  text-align: end;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.testimonials .content .testimonialsBx h3 span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* contact */
+.contact {
+  background: #111;
+}
+
+.formBx {
+  min-width: 60%;
+}
+
+.formBx form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: my_style;
+}
+
+.formBx form input,
+.formBx form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+}
+
+.formBx form textarea{
+    min-height: 200px;
+}
